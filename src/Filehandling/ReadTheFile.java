@@ -13,6 +13,7 @@ public class ReadTheFile {
                 String s=sc.nextLine();
                 System.out.println(s);
             }
+            System.out.println("file succesfully read");
             sc.close();
 
         } catch (IOException e) {
