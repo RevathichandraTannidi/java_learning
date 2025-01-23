@@ -20,9 +20,6 @@ try
 } catch (Exception e) {
     throw new RuntimeException(e);
 }
-try {
-    filewriter write;
-    write = new filewriter("/Users/RevathiTannidi/IdeaProjects/java_learning/src/Filehandling/run.txt");
-}
+
     }
 }
