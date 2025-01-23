@@ -10,7 +10,7 @@ public class ReadTheFile {
             Scanner sc=new Scanner(read);  // used to read the data from the file of line by line
             while(sc.hasNextLine())
             {
-                String s=sc.nextLine();
+                   String s=sc.nextLine();
                 System.out.println(s);
             }
             System.out.println("file succesfully read");
