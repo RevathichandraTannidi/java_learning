@@ -15,7 +15,7 @@ public class ReadTheFile {
             }
             System.out.println("file succesfully read");
             sc.close();
-  
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
