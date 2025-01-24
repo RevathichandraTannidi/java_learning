@@ -9,18 +9,28 @@ public class ReaderExample {
 
 // Using FileReader (a subclass of Reader) to read data from a file
 
-        FileReader fileReader = new FileReader("/Users/RevathiTannidi/IdeaProjects/java_learning/src/Filehandling/reader.txt");
+       FileReader fr=new FileReader("/Users/RevathiTannidi/IdeaProjects/java_learning/src/Filehandling/output.txt");
+       BufferedReader br=new BufferedReader(fr);
+       int lines=0;
+       int word=0;
+       int characters=0;
+       try
+       {
+           String line;
+           while((line=br.readLine())!=null){
+               lines++;
+               characters+=line.length();
+               String[] words = line.split("\\s+");
+               word += words.length;
+           }
+           System.out.println(lines);
+           System.out.println(characters);
+           System.out.println(word);
+       }
 
-        int character;
-
-        while ((character = fileReader.read()) != -1) {
-
-            System.out.print((char) character); // Print each character
-
-        }
-
-        fileReader.close();
-
+        catch (Exception e) {
+           throw new RuntimeException(e);
+       }
     }
 
 }
