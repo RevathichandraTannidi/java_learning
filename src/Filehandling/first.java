@@ -11,9 +11,8 @@ public class first {
         String line;
 
         while ((line = br.readLine()) != null) {
-            // Split the line into values
             String[] values = line.split(",");
-            // Print values for debugging
+            // Print values
             for (String value : values) {
                 System.out.print(value + " ");
             }
